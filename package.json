@@ -22,8 +22,8 @@
   },
   "homepage": "https://github.com/Turfjs/turf-merge",
   "dependencies": {
-    "lodash": "~2.4.1",
-    "turf-union": "0.0.0"
+    "turf-union": "0.0.0",
+    "clone": "~0.1.15"
   },
   "devDependencies": {
     "glob": "~4.0.0",

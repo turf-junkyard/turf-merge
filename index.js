@@ -1,11 +1,11 @@
 // 1. run tin on points
 // 2. merge the tin
-var _ = require('lodash')
+var clone = require('clone')
 var union = require('turf-union')
 
 module.exports = function(polygons, done){
 
-  var merged = _.cloneDeep(polygons.features[0]),
+  var merged = clone(polygons.features[0]),
     features = polygons.features;
 
   for (var i = 0, len = features.length; i < len; i++) {
@@ -15,5 +15,6 @@ module.exports = function(polygons, done){
       merged = union(merged, poly);
     }
   }
+
   return merged;
 }
