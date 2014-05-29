@@ -1,0 +1,32 @@
+{
+  "name": "turf-merge",
+  "version": "0.0.0",
+  "description": "merge polygons",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Turfjs/turf-merge.git"
+  },
+  "keywords": [
+    "turf",
+    "gis",
+    "geometry"
+  ],
+  "author": "Morgan Herlocker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Turfjs/turf-merge/issues"
+  },
+  "homepage": "https://github.com/Turfjs/turf-merge",
+  "dependencies": {
+    "lodash": "~2.4.1",
+    "turf-union": "0.0.0"
+  },
+  "devDependencies": {
+    "glob": "~4.0.0",
+    "tape": "~2.13.1"
+  }
+}
