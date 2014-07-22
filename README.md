@@ -4,6 +4,26 @@ turf-merge
 
 Takes a feature collection of polygons and outputs a single merged polygon feature.
 
+###Install
+
+```sh
+npm install turf-merge
+```
+
+###Parameters
+
+|name|description|
+|---|---|
+|fc|a FeatureCollection|
+
+###Usage
+
+```js
+merge(fc)
+```
+
+###Example
+
 ```js
 var merge = require('turf-merge')
 var fs = require('fs')
