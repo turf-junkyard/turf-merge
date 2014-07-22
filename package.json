@@ -23,10 +23,10 @@
   "homepage": "https://github.com/Turfjs/turf-merge",
   "dependencies": {
     "turf-union": "0.0.0",
-    "clone": "~0.1.15"
+    "clone": "~0.1.17"
   },
   "devDependencies": {
-    "glob": "~4.0.0",
-    "tape": "~2.13.1"
+    "glob": "~4.0.4",
+    "tape": "~2.13.4"
   }
 }
