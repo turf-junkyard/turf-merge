@@ -26,6 +26,7 @@
     "clone": "~0.1.17"
   },
   "devDependencies": {
+    "benchmark": "^1.0.0",
     "glob": "~4.0.4",
     "tape": "~2.13.4"
   }
