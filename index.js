@@ -1,7 +1,5 @@
-// 1. run tin on points
-// 2. merge the tin
-var clone = require('clone')
-var union = require('turf-union')
+var clone = require('clone');
+var union = require('turf-union');
 
 module.exports = function(polygons, done){
 

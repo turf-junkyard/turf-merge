@@ -1,6 +1,6 @@
 {
   "name": "turf-merge",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "merge polygons",
   "main": "index.js",
   "scripts": {
@@ -27,6 +27,7 @@
   },
   "devDependencies": {
     "glob": "~4.3.1",
-    "tape": "~3.0.3"
+    "tape": "~3.0.3",
+    "benchmark": "^1.0.0"
   }
 }

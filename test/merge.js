@@ -1,7 +1,7 @@
 var merge = require('../'),
   test = require('tape'),
   glob = require('glob'),
-  fs = require('fs')
+  fs = require('fs');
 
 var REGEN = false;
 
