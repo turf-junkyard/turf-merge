@@ -8,18 +8,27 @@ var union = require('turf-union');
  * @param {FeatureCollection} fc - a FeatureCollection of Polygon features
  * @return {Feature} a {@link Polygon} feature
  * @example
- * var a = turf.polygon([[[10,0],[20,10],[20,0],[10,0]]]);
- * a.properties.fill = '#0f0';
- * var b = turf.polygon([[[10+5,0+5],[20+5,10+5],[20+5,0+5],[10+5,0+5]]]);
- * b.properties.fill = '#00f';
- * var erased = turf.erase(JSON.parse(JSON.stringify(a)), b);
- * var a = turf.polygon([[[10,0],[20,10],[20,0],[10,0]]]);
- * a.properties.fill = '#0f0';
- * var b = turf.polygon([[[10+5,0+5],[20+5,10+5],[20+5,0+5],[10+5,0+5]]]);
- * b.properties.fill = '#00f';
- * var merged = turf.merge(turf.featurecollection([a, b]));
- * //=a
- * //=b
+ * var poly1 = turf.polygon([[
+ *  [9.994812, 53.549487],
+ *  [10.046997, 53.598209],
+ *  [10.117721, 53.531737],
+ *  [9.994812, 53.549487]
+ * ]]);
+ * poly1.properties.fill = '#0f0';
+ * var poly2 = turf.polygon([[
+ *  [10.000991, 53.50418],
+ *  [10.03807, 53.562539],
+ *  [9.926834, 53.551731],
+ *  [10.000991, 53.50418]
+ * ]]);
+ * poly2.properties.fill = '#00f';
+ *
+ * var polygons = turf.featurecollection([poly1, poly2]);
+ *
+ * var merged = turf.merge(polygons);
+ *
+ * //=polygons
+ *
  * //=merged
  */
 module.exports = function(polygons, done){
