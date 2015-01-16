@@ -5,8 +5,8 @@ var union = require('turf-union');
  * Takes a {@link FeatureCollection} of {@link Polygon} features and outputs a single merged
  * polygon feature.
  * @module turf/merge
- * @param {FeatureCollection} features
- * @return {Feature}
+ * @param {FeatureCollection} fc - a FeatureCollection of Polygon features
+ * @return {Feature} a {@link Polygon} feature
  * @example
  * var a = turf.polygon([[[10,0],[20,10],[20,0],[10,0]]]);
  * a.properties.fill = '#0f0';
