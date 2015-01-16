@@ -2,7 +2,7 @@ var clone = require('clone');
 var union = require('turf-union');
 
 /**
- * Takes a feature collection of polygons and outputs a single merged
+ * Takes a {@link FeatureCollection} of {@link Polygon} features and outputs a single merged
  * polygon feature.
  * @module turf/merge
  * @param {FeatureCollection} features
