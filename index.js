@@ -5,6 +5,7 @@ var union = require('turf-union');
  * Takes a {@link FeatureCollection} of {@link Polygon} features and returns a single merged
  * polygon feature. If the input Polygon features are not contiguous, this function returns a {@link MultiPolygon} feature.
  * @module turf/merge
+ * @category transformation
  * @param {FeatureCollection} fc a FeatureCollection of {@link Polygon} features
  * @return {Feature} a {@link Polygon} or {@link MultiPolygon} feature
  * @example
