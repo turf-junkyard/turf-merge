@@ -8,20 +8,40 @@ var union = require('turf-union');
  * @param {FeatureCollection} fc a FeatureCollection of {@link Polygon} features
  * @return {Feature} a {@link Polygon} or {@link MultiPolygon} feature
  * @example
- * var polygons = turf.featurecollection([
- *  turf.polygon([[
- *    [9.994812, 53.549487],
- *    [10.046997, 53.598209],
- *    [10.117721, 53.531737],
- *    [9.994812, 53.549487]
- *  ]], { fill: '#0f0' }),
- *  turf.polygon([[
- *    [10.000991, 53.50418],
- *    [10.03807, 53.562539],
- *    [9.926834, 53.551731],
- *    [10.000991, 53.50418]
- *  ]], { fill: '#00f' })
- * ]);
+ * var polygons = {
+ *   "type": "FeatureCollection",
+ *   "features": [
+ *     {
+ *       "type": "Feature",
+ *       "properties": {
+ *         "fill": "#0f0"
+ *       },
+ *       "geometry": {
+ *         "type": "Polygon",
+ *         "coordinates": [[
+ *           [9.994812, 53.549487],
+ *           [10.046997, 53.598209],
+ *           [10.117721, 53.531737],
+ *           [9.994812, 53.549487]
+ *         ]]
+ *       }
+ *     }, {
+ *       "type": "Feature",
+ *       "properties": {
+ *         "fill": "#00f"
+ *       },
+ *       "geometry": {
+ *         "type": "Polygon",
+ *         "coordinates": [[
+ *           [10.000991, 53.50418],
+ *           [10.03807, 53.562539],
+ *           [9.926834, 53.551731],
+ *           [10.000991, 53.50418]
+ *         ]]
+ *       }
+ *     }
+ *   ]
+ * };
  *
  * var merged = turf.merge(polygons);
  *
