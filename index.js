@@ -50,7 +50,7 @@ var union = require('turf-union');
  *
  * //=merged
  */
-module.exports = function(polygons, done){
+module.exports = function(polygons){
 
   var merged = clone(polygons.features[0]),
     features = polygons.features;
