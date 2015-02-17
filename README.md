@@ -8,7 +8,7 @@ merge polygons
 ### `turf.merge(fc)`
 
 Takes a FeatureCollection of Polygon features and outputs a single merged
-polygon feature.
+polygon feature, if polygons are touching, otherwise outputs a MultiPolygon.
 
 ### Parameters
 
