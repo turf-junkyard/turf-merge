@@ -7,14 +7,14 @@ merge polygons
 
 ### `turf.merge(fc)`
 
-Takes a FeatureCollection of Polygon features and returns a single merged
-polygon feature. If the input Polygon features are not contiguous, this function returns a MultiPolygon feature.
+Takes a set of Polygon|polygons and returns a single merged
+polygon feature. If the input polygon features are not contiguous, this function returns a MultiPolygon feature.
 
 ### Parameters
 
-| parameter | type              | description                             |
-| --------- | ----------------- | --------------------------------------- |
-| `fc`      | FeatureCollection | a FeatureCollection of Polygon features |
+| parameter | type                           | description    |
+| --------- | ------------------------------ | -------------- |
+| `fc`      | FeatureCollection\.\<Polygon\> | input polygons |
 
 
 ### Example
@@ -61,6 +61,9 @@ var merged = turf.merge(polygons);
 
 //=merged
 ```
+
+
+**Returns** `Feature.<Polygon|MultiPolygon>`, merged polygon or multipolygon
 
 ## Installation
 
