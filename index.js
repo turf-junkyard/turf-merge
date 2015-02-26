@@ -2,7 +2,7 @@ var clone = require('clone');
 var union = require('turf-union');
 
 /**
- * Takes a set of polygons and returns a single merged
+ * Takes a set of {@link Polygon|polygons} and returns a single merged
  * polygon feature. If the input polygon features are not contiguous, this function returns a {@link MultiPolygon} feature.
  * @module turf/merge
  * @category transformation
