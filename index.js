@@ -7,7 +7,7 @@ var union = require('turf-union');
  * @module turf/merge
  * @category transformation
  * @param {FeatureCollection<Polygon>} fc input polygons
- * @return {Feature<(Polygon|MultiPolygon)} merged polygon or multipolygon
+ * @return {Feature<(Polygon|MultiPolygon)>} merged polygon or multipolygon
  * @example
  * var polygons = {
  *   "type": "FeatureCollection",
