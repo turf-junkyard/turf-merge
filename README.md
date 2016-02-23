@@ -1,4 +1,7 @@
-# turf-merge
+# DEPRECATED: turf-merge
+
+This module is now deprecated in favor of using the `turf-union` module
+repeatedly on an array.
 
 [![build status](https://secure.travis-ci.org/Turfjs/turf-merge.png)](http://travis-ci.org/Turfjs/turf-merge)
 
